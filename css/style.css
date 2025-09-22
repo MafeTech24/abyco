@@ -20,7 +20,7 @@ h1, h2, h3 {
 /* ======== NAVBAR ======== */
 .navbar {
     transition: background-color 0.4s ease-in-out, padding 0.4s ease;
-    background-color: rgba(30, 40, 32, 0.95);
+    background-color: var(--accent-gold);
 }
 
 /*.navbar.scrolled {
@@ -118,14 +118,14 @@ h1, h2, h3 {
 
 /* ======== FOOTER ======== */
 .footer {
-    background-color:  rgba(30, 40, 32, 0.95);
+    background-color:  var(--accent-gold);
     transition: background-color 0.4s ease-in-out, padding 0.4s ease;
-    color: var(--accent-gold);
+    color: var(--primary-green);
     padding: .5rem 0;
 }
 
 .social-icons a {
-    color: var(--accent-gold);
+    color: var(--primary-green);
     font-size: 1.5rem;
     margin: 0 0.75rem;
     transition: color 0.3s;
