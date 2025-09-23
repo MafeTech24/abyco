@@ -158,3 +158,19 @@ h1, h2, h3 {
 .social-icons a:hover {
     color: var(--text-light);
 }
+.text-footer{
+    color: var(--primary-green);
+    font-size: 15px;
+}
+/* ======== MEDIA QUERIES ======== */
+@media (max-width: 768px) {
+    .hero-button-container{
+        font-size: 12px !important;
+        border-radius: 20px;
+        padding: 0;
+
+    }
+    .text-footer{
+        font-size: 10px;
+    }
+}
