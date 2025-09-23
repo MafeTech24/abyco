@@ -4,6 +4,7 @@
     --accent-gold: #d6d2c4;
     --text-light: #f5f5dc;
     --text-dark: #333;
+    --text-medio:#1a1e19;
     --font-primary: 'Playfair Display', serif;
     --font-secondary: 'Lato', sans-serif;
 }
@@ -81,9 +82,9 @@ h1, h2, h3 {
     left: 0;
     height: 100%;
     width: 100%;
-    /*background-color: var(--primary-green);*/
-    /*opacity: 0.3;*/
-    z-index: -1;
+    background-color: var(--text-medio);
+    /*opacity: 0.9;*/
+    z-index: 1;
 }
 
 .hero-content {
@@ -96,24 +97,48 @@ h1, h2, h3 {
     font-weight: 700;
     
 }
-
-.btn-cta {
+.hero-button-container {
+    position: absolute; /* Posiciona el elemento respecto a su contenedor padre (#hero) */
+    bottom: 8vh;      /* Lo separa un 8% de la altura de la pantalla desde abajo */
+    left: 50%;        /* Lo mueve al 50% del ancho del contenedor */
+    transform: translateX(-50%); /* <-- AÑADE ESTA LÍNEA */    
+    z-index: 3;       /* Asegura que esté por encima del overlay */
     background-color: var(--accent-gold);
     color: var(--primary-green);
+    font-family: var(--font-secondary);
     font-weight: 700;
-    font-size: 1.1rem;
-    padding: 0.8rem 2.5rem;
+    padding: 0.5rem 1.5rem;
     border-radius: 50px;
-    border: 2px solid var(--accent-gold);
     transition: all 0.3s ease;
 }
 
-.btn-cta:hover {
-    background-color: transparent;
-    color: var(--accent-gold);
-    transform: translateY(-3px);
+.hero-button-container:hover {
+    background-color: var(--text-light);
+    color: var(--primary-green);
+    transform: translateX(-50%) scale(1.05);
+}
+/* ======== BOTÓN FLOTANTE DE WHATSAPP ======== */
+.whatsapp-fab {
+    position: fixed;         /* Se mantiene fijo en la pantalla */
+    bottom: 25px;            /* Distancia desde abajo */
+    right: 25px;             /* Distancia desde la derecha */
+    width: 60px;             /* Ancho */
+    height: 60px;            /* Alto */
+    background-color: #25D366; /* Color oficial de WhatsApp */
+    color: #FFF;             /* Color del ícono (blanco) */
+    border-radius: 50%;      /* Lo hace circular */
+    font-size: 30px;         /* Tamaño del ícono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Sombra para que destaque */
+    z-index: 1000;           /* Se asegura que esté por encima de todo */
+    transition: transform 0.3s ease; /* Transición suave para el hover */
 }
 
+.whatsapp-fab:hover {
+    transform: scale(1.1); /* Agranda el botón al pasar el mouse */
+}
 
 /* ======== FOOTER ======== */
 .footer {
