@@ -83,8 +83,8 @@ h1, h2, h3 {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: var(--primary-green);
-    opacity: 0.3;
+    /*background-color: var(--primary-green);*/
+    /*opacity: 0.3;*/
     z-index: -1;
 }
 
