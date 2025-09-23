@@ -37,7 +37,7 @@ h1, h2, h3 {
 }
 
 .navbar .nav-link:hover {
-    color: var(--accent-gold);
+    color: var(--primary-green);
 }
 
 .btn-contact {
