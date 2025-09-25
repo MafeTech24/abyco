@@ -270,3 +270,48 @@ h1, h2, h3 {
         font-size: 10px;
     }
 }
+
+/* TABLETS (≤ 992px) */
+@media (max-width: 992px) {
+  .hero-text-contacto h1 {
+    font-size: 2rem;
+  }
+  .hero-text-contacto h2 {
+    font-size: 1.5rem;
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 350px;
+  }
+}
+
+/* CELULARES (≤ 576px) */
+@media (max-width: 576px) {
+  .hero-text-contacto h1 {
+    font-size: 1.6rem;
+  }
+  .hero-text-contacto h2 {
+    font-size: 1rem;
+  }
+  .ubicacion h3,
+  .mensaje h3 {
+    font-size: 0.8rem;
+  }
+  .contact-info li {
+    font-size: 0.95rem;
+  }
+  .map-container iframe {
+    height: 280px;
+  }
+  .btn-submit {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+  .social-icons a {
+    font-size: 1.2rem;
+  }
+  .text-footer {
+    font-size: 0.75rem;
+  }
+}
