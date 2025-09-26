@@ -259,10 +259,12 @@ a .btn .btn-cta{
         font-size: 12px !important;
         border-radius: 15px;
         padding-top: 0px;
-         bottom: 4vh;
+        
 
     }
-   
+   .hero-button-container .btn-cta{
+        bottom: 2vh;
+   }
     .social-icons a{
         font-size: 1.5rem;
         margin: 0 0.5rem;
