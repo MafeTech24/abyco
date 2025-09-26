@@ -257,8 +257,9 @@ a .btn .btn-cta{
     }
     .hero-button-container{
         font-size: 12px !important;
-        border-radius: 20px;
+        border-radius: 15px;
         padding-top: 0px;
+         bottom: 4vh;
 
     }
    
