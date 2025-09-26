@@ -113,7 +113,7 @@ a .btn .btn-cta{
 }
 .hero-button-container .btn-cta {
     position: absolute; /* Posiciona el elemento respecto a su contenedor padre (#hero) */
-    bottom: 7vh;      /* Lo separa un 8% de la altura de la pantalla desde abajo */
+    bottom: 8vh;      /* Lo separa un 8% de la altura de la pantalla desde abajo */
     left: 50%;        /* Lo mueve al 50% del ancho del contenedor */
     transform: translateX(-50%); /* <-- AÑADE ESTA LÍNEA */    
     z-index: 3;       /* Asegura que esté por encima del overlay */
