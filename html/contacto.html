@@ -38,15 +38,17 @@
     </nav>
   </header>
   <main class="main-page">
-  <section  class="py-5">
-    <div class="container">
-        <img src="../assets/portada3.webp" alt="Contacto AB&CO" class="bg-cover">
-        <div class="overlay-cover"></div>
-        <div class="hero-text-contacto text-center">
-            <h1 class="display-1 mt-5 pt-5">Contáctanos</h1>
-            <h2 class="display-4 my-3 py-3">Estamos aquí para ayudarte</h2> 
-        </div> 
-     
+    <section  class="py-5">
+      <div class="container">
+          <img src="../assets/portada3.webp" alt="Contacto AB&CO" class="bg-cover">
+          <div class="overlay-cover"></div>
+          <div class="hero-text-contacto text-center">
+              <h1 class="display-1 mt-5 pt-5">Contáctanos</h1>
+              <h2 class="display-4 my-3 py-3">Estamos aquí para ayudarte</h2> 
+          </div>
+      </div>
+    </section> 
+    <section class="container pb-3">
       <div class="row g-4">
         <div class="ubicacion col-lg-6">
           <h3 class="display-6 my-2 py-2">Información de Contacto</h3>
@@ -64,13 +66,16 @@
           <h3 class="display-6 my-2 py-2 ">Envíanos un Mensaje</h3>
           <form action="https://formsubmit.co/abyco.asesoriaintegral@gmail.com" method="POST">
             <div class="mb-3 pt-2">
-              <input type="text" class="form-control" placeholder="Nombre">
+              <input type="text" class="form-control" placeholder="Nombre" required name="name">
             </div>
             <div class="mb-3 pt-2">
-              <input type="email" class="form-control" placeholder="Correo">
+              <input type="email" class="form-control" placeholder="Correo" required name="email">
             </div>
             <div class="mb-3 pt-2">
-              <textarea class="form-control" rows="5" placeholder="Mensaje"></textarea>
+              <input type="tel" class="form-control" placeholder="Teléfono" required name="phone">
+            </div>
+            <div class="mb-3 pt-2">
+              <textarea class="form-control" rows="5" placeholder="Mensaje" required></textarea>
             </div>
             <div class="pt-2">
             <button type="submit" class="btn btn-submit">Enviar</button>
@@ -83,8 +88,8 @@
           </form>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  <!-- WHATSAPP FLOATING BUTTON -->
   <div>
   <a href="https://wa.me/5493515185620" class="whatsapp-fab" target="_blank">
             <i class="bi bi-whatsapp"></i>
