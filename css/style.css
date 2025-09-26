@@ -32,7 +32,7 @@ h1, h2, h3 {
     font-weight: 700;
     font-size:large;
     margin: 0 0.5rem;
-    transition: color 0.3s;
+    transition: all 0.3s ease;
 }
 
 .navbar .nav-link:hover {
@@ -44,7 +44,8 @@ h1, h2, h3 {
     transform: scale(1.05);
 }
 .btn-contact,
-.btn .btn-cta{
+a .btn .btn-cta{
+    font-family: var(--font-secondary);
     background-color: var(--accent-gold);
     color: var(--primary-green);
     font-weight: 700;
@@ -84,7 +85,7 @@ h1, h2, h3 {
 }
 
 #hero .overlay,
-.overlay-contacto {
+.overlay-cover {
     position: absolute;
     top: 0;
     left: 0;
@@ -106,15 +107,19 @@ h1, h2, h3 {
     font-weight: 700;
     
 }
-.hero-button-container {
+#hero .hero-button-container{
+    margin-top: 15px;
+    padding-top: 15px;
+}
+.hero-button-container .btn-cta {
     position: absolute; /* Posiciona el elemento respecto a su contenedor padre (#hero) */
-    bottom: 8vh;      /* Lo separa un 8% de la altura de la pantalla desde abajo */
+    bottom: 7vh;      /* Lo separa un 8% de la altura de la pantalla desde abajo */
     left: 50%;        /* Lo mueve al 50% del ancho del contenedor */
     transform: translateX(-50%); /* <-- AÑADE ESTA LÍNEA */    
     z-index: 3;       /* Asegura que esté por encima del overlay */
     background-color: var(--accent-gold);
     color: var(--text-dark);
-    font-family: var(--font-tertiary);
+    font-family: var(--font-secondary);
     font-weight: bolder;
     font-size:18px !important;
     padding: 0.5rem 1.5rem;
@@ -122,7 +127,7 @@ h1, h2, h3 {
     transition: all 0.3s ease;
 }
 
-.hero-button-container:hover {
+.hero-button-container .btn-cta:hover {
     background-color: var(--text-light);
     color: var(--primary-green);
     transform: translateX(-50%) scale(1.05);
@@ -130,8 +135,8 @@ h1, h2, h3 {
 /* ======== BOTÓN FLOTANTE DE WHATSAPP ======== */
 .whatsapp-fab {
     position: fixed;         /* Se mantiene fijo en la pantalla */
-    bottom: 25px;            /* Distancia desde abajo */
-    right: 25px;             /* Distancia desde la derecha */
+    bottom: 20px;            /* Distancia desde abajo */
+    right: 15px;             /* Distancia desde la derecha */
     width: 60px;             /* Ancho */
     height: 60px;            /* Alto */
     background-color: #25D366; /* Color oficial de WhatsApp */
@@ -151,13 +156,13 @@ h1, h2, h3 {
 }
 /* ======== SECCIÓN DE CONTACTO ======== */
 
-#main-contacto {
+.main-page {
     position: relative;
     padding: 0;
     margin: 0;
 }
 
-.bg-contacto{
+.bg-cover{
     position: absolute;
     top: 0;
     left: 0;
@@ -168,18 +173,6 @@ h1, h2, h3 {
     overflow: hidden;
 }
 
-
-#contacto h3 {
-    color: var(--primary-green);
-    font-family: var(--font-primary);
-    font-weight: 700;
-}
-
-.map-container {
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    line-height: 0; /* Corrige espacios en blanco debajo del iframe */
-}
 
 .contact-info {
     list-style: none;
@@ -199,6 +192,12 @@ h1, h2, h3 {
     margin-right: 15px;
 }
 
+.contact-info a {
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}
 /* Estilos para el formulario */
 .form-control {
     border-radius: 8px;
@@ -237,7 +236,7 @@ h1, h2, h3 {
 
 .social-icons a {
     color: var(--primary-green);
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin: 0 0.75rem;
     transition: color 0.3s;
 }
@@ -259,7 +258,7 @@ h1, h2, h3 {
     .hero-button-container{
         font-size: 12px !important;
         border-radius: 20px;
-        padding: 0;
+        padding-top: 0px;
 
     }
     .social-icons a{
@@ -273,12 +272,7 @@ h1, h2, h3 {
 
 /* TABLETS (≤ 992px) */
 @media (max-width: 992px) {
-  .hero-text-contacto h1 {
-    font-size: 2rem;
-  }
-  .hero-text-contacto h2 {
-    font-size: 1.5rem;
-  }
+ 
   .map-container iframe {
     width: 100%;
     height: 350px;
@@ -287,16 +281,10 @@ h1, h2, h3 {
 
 /* CELULARES (≤ 576px) */
 @media (max-width: 576px) {
-  .hero-text-contacto h1 {
-    font-size: 1.6rem;
-  }
-  .hero-text-contacto h2 {
-    font-size: 1rem;
-  }
-  .ubicacion h3,
-  .mensaje h3 {
-    font-size: 0.8rem;
-  }
+  
+.hero-button-container .btn-cta{
+    bottom: 4vh;
+    }
   .contact-info li {
     font-size: 0.95rem;
   }

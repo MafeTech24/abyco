@@ -3,10 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AB&CO | Quiénes Somos</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">    
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <title>AB&CO | Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
 </head>
 <body>
   <!-- NAVBAR -->
@@ -21,20 +28,22 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto align-items-center">
-            <li class="nav-item"><a class="nav-link active" href="./quienesSomos.html">Quiénes Somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="./quienesSomos.html">Quiénes Somos</a></li>
             <li class="nav-item"><a class="nav-link" href="./servicios.html">Servicios</a></li>
-            <li class="nav-item ms-lg-3"><a class="btn btn-contact" href="./contacto.html">Contacto</a></li>
+            <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>            
           </ul>
         </div>
       </div>
     </nav>
   </header>
-
-  <!-- HERO -->
-  <section class="py-5 text-center" style="margin-top:100px; background-color: var(--text-light);">
+  <main class="main-page">
+  <section  class="py-5">
     <div class="container">
-      <h1 class="mb-3">Quiénes Somos</h1>
-      <p class="lead text-muted">Un equipo de profesionales en derecho y contaduría, comprometidos con brindar asesoría integral a empresas y personas.</p>
+        <img src="../assets/portadaEquipo.png" alt="Contacto AB&CO" class="bg-cover">
+        <div class="overlay-cover"></div>
+        <div class="hero-text-contacto text-center">
+            <h1 class="display-1 mt-5 pt-5">Quiénes Somos</h1>
+      <h2 class="display-6 my-3 py-3">Un equipo de profesionales comprometidos con brindar asesoría integral a empresas y personas.</h2>
     </div>
   </section>
 
@@ -42,31 +51,45 @@
   <section class="container py-5">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <img src="../assets/oficina.jpg" alt="Equipo AB&CO" class="img-fluid rounded shadow">
+        <img src="../assets/equipo.png" alt="Equipo AB&CO" class="img-fluid rounded shadow">
       </div>
-      <div class="col-lg-6">
-        <h2 class="mb-3">Nuestra Filosofía</h2>
-        <p>En AB&CO creemos en la confianza, la ética profesional y el acompañamiento constante a nuestros clientes. Conjugamos el conocimiento jurídico y contable para ofrecer soluciones integrales.</p>
+      <div class="col-lg-6 text-quienes">        
+        <p>En AB&CO brindamos asesoría integral a personas y empresas que buscan soluciones confiables y estratégicas para desarrollarse en el ámbito contable, jurídico y empresarial.
+
+Nuestro estudio fue fundado por abogados y contadores, y a lo largo del tiempo hemos conformado un equipo interdisciplinario que nos permite ofrecer un enfoque completo y a medida.
+
+Contamos con la colaboración de martilleros, agrimensores, productores de seguros, especialistas en comercio exterior, publicidad y marketing, entre otros profesionales, que aportan su experiencia para garantizar un acompañamiento sólido en cada decisión.
+
+En AB&CO creemos que cada cliente es único. Por eso, trabajamos de manera cercana y personalizada, transformando la asesoría en un aliado estratégico para el crecimiento y la seguridad de personas físicas y jurídicas.</p>
         <ul class="mt-3">
-          <li>Más de 15 años de experiencia en el mercado.</li>
+          <li>Más de 10 años de experiencia en el mercado.</li>
           <li>Atención personalizada y transparente.</li>
           <li>Soluciones prácticas y estratégicas.</li>
         </ul>
       </div>
     </div>
   </section>
-
+   <div>
+  <a href="https://wa.me/5493515185620" class="whatsapp-fab" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+  </a>
+  </div>
+  </main>
   <!-- FOOTER -->
   <footer class="footer text-center">
-    <div class="container">
-      <div class="social-icons mb-3">
-        <a href="#"><i class="bi bi-instagram"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>                                
-        <a href="#"><i class="bi bi-facebook"></i></a>
-      </div>
-      <p class="mb-0 text-footer">&copy; 2025 AB&CO - Córdoba Capital | Todos los derechos reservados | Creado por MafeTech.</p>
-    </div>
-  </footer>
+        <div class="container">
+            <div class="social-icons mb-3">
+                <a href="https://www.instagram.com/abycoabogadoscontadores/" target="_blank"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin" target="_blank"></i></a>                                
+                <a href="https://www.facebook.com/EstudioJuridicoContableAByCO"><i class="bi bi-facebook" target="_blank"></i></a>
+                <!--<a href="#"><i class="bi bi-twitter-x"></i></a>-->
+            </div>
+            <p class="mb-0 text-footer">&copy; 2025 AB&CO - 27 de Abril 929 Piso 7 Of B - Córdoba Capital | Todos los derechos reservados | Creado por MafeTech.</p>
+        </div>        
+    </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
+    
