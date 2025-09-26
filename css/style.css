@@ -261,9 +261,7 @@ a .btn .btn-cta{
         padding-top: 0px;
 
     }
-    .hero-button-container .btn-cta{
-    bottom: 5vh;
-    }
+   
     .social-icons a{
         font-size: 1.5rem;
         margin: 0 0.5rem;
@@ -285,9 +283,7 @@ a .btn .btn-cta{
 /* CELULARES (≤ 576px) */
 @media (max-width: 576px) {
   
-.hero-button-container .btn-cta{
-    bottom: 4vh;
-    }
+
   .contact-info li {
     font-size: 0.95rem;
   }
